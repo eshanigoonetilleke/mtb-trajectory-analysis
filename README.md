@@ -9,6 +9,26 @@ Contents:
  
 3. environment.yml: Conda environment used to run both notebooks.
 
+4. Data for TS-DAR and tICA-MSM analysis of Mtb RNAP conformational dynamics
+
+Files from Zenodo:
+1. spectral_oasis.tar.gz: input features for TS-DAR.ipynb, which holds 1234 files named:
+ 
+        spectral_oasis_filter_RUN{i}_CLONE{j}.npy
+ 
+    i = RUN (starting structure / seed), 0-251
+    j = CLONE (independent replica), 0-4
+ 
+2. ts-dar_4-state_model.tar.gz: trained TS-DAR model used in the paper. Contains:
+ 
+        model_10epochs.pytorch: Trained model for TSDARLayer([2000,1000,500,250,125,50,3],n_states=4)
+        validation_vamp.npy: Validation VAMP-2 loss per training epoch
+        validation_dis.npy: Validation dispersion loss per training epoch
+ 
+3. tica_trajs_2000_100.npy: input for MSM.ipynb. tICA projections of the 2000 spectral oASIS features (tICA lag time: 100 ns). 
+ 
+4. label_2000.txt: input for MSM.ipynb. One integer per line (1234 lines): the RUN (seed) index, 0-251, of each trajectory in tica_trajs_2000_100.npy.
+
 Setup:
 1. Create the environment:
  
