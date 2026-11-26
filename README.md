@@ -41,10 +41,7 @@ Notes:
 1. Trajectory indices printed in both notebooks follow one order: RUN 0-251, then CLONE 0-4 within each RUN, skipping the 26 missing RUN/CLONE pairs listed in the Zenodo README.
  
 2. TS-DAR state labels: TS-DAR.ipynb uses label_map to convert TS-DAR output indices to the state numbers used in the figures and paper:
-    0 -> State 3
-    1 -> State 4
-    2 -> State 2
-    3 -> State 1
+    0 -> State 3, 1 -> State 4, 2 -> State 2, 3 -> State 1
  
 Requirements:
 Python 3.9, numpy, pandas, matplotlib, joblib, PyTorch, MSMBuilder, and TS-DAR (package name: tsdar, https://github.com/xuhuihuang/ts-dar). Exact versions are in environment.yml.
