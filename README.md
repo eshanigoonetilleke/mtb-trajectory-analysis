@@ -48,9 +48,7 @@ Notes:
     3 -> State 1
  
 Requirements:
-Python 3.9, numpy, pandas, matplotlib, joblib, PyTorch, MSMBuilder, and
-TS-DAR (package name: tsdart, https://github.com/xuhuihuang/ts-dar).
-Exact versions are in environment.yml.
+Python 3.9, numpy, pandas, matplotlib, joblib, PyTorch, MSMBuilder, and TS-DAR (package name: tsdar, https://github.com/xuhuihuang/ts-dar). Exact versions are in environment.yml.
 
 TS-DAR method citation:
 Liu, B., Boysen, J.G., Unarta, I.C. et al. Exploring transition states of protein conformational changes via out-of-distribution detection in the hyperspherical latent space. Nat. Commun. 16, 349 (2025). https://doi.org/10.1038/s41467-024-55228-4
